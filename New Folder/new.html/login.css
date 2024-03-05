@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar {
+    background-color: aqua;
+    width: 100%;
+    height: 80px;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+   
+}
+
+.logo {
+    height: 60px;
+    padding: 10px;
+}
+
+.nav-list {
+    float: right;
+    line-height: 70px;
+    /* width: 100%; */
+    margin-right: 40px;
+
+}
+
+.list-nav {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-size: 20px;
+}
+.list-nav a {
+    text-decoration: none;
+}
+.list-nav a:hover {
+    color: red
+    
+}
+.checkbtn {
+    float: right;
+    font-size: 30px;
+    line-height: 80px;
+    display: none;
+}
+
+#check {
+    float: right;
+    display: none;
+}
+
+.login-page {
+    background-image: url(./image/pincle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   height: 100vh;
+   width: 100%;
+   padding-top: 70px;
+}
+.login1 {
+    background-color: brown;
+    width: 35%;
+    height: 250px;
+    border-radius: 20px;
+   margin-left: 40%;
+
+}
+
+.log-tex1{
+    margin-left: 60px;
+    width: 70%;
+    height: 25px;
+    margin-top: 80px;
+    
+
+}
+.log-tex2{
+    margin-left: 60px;
+    width: 70%;
+    height: 25px;
+}
+.login-bottom {
+    margin-left: 60px;
+    height: 25px;
+    width: 70px;
+
+}
+.login-bottom2 {
+    height: 25px;
+    width: 70px;
+}
+@media (max-width:600px) {
+    .list-nav {
+        background-color:burlywood;
+        display: block;
+        text-align: center;
+
+
+    }
+
+    .checkbtn {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .nav-list{
+        left: -100%;
+        width: 100%;
+        transition: 1s;
+        position: fixed;
+    }
+     #check:checked~.nav-list{
+        left: 0%;
+    }
+    .login1 {
+        background-color: rgb(126, 201, 15);
+        width: 80%;
+        height: 250px;
+        border-radius: 20px;
+       margin-left: 8%;
+    
+    }
+    .log-tex1{
+        margin-left: 25px;
+        width:70%;
+        height: 25px;
+        margin-top: 60px;
+        border-radius: 5PX;
+        
+    
+    }
+    .log-tex2{
+        margin-left: 25px;
+        width: 70%;
+        height: 25px;
+        border-radius: 5PX;
+    }
+    .login-bottom {
+        margin-left: 25px;
+        height: 25px;
+        width: 60px;
+        border-radius: 5PX;
+    
+    }
+    .login-bottom2 {
+        height: 25px;
+        width: 60px;
+        border-radius: 5PX;
+    }
+}

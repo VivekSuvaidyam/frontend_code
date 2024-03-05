@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans sans-serif;
+}
+
+.header1 {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    
+}
+
+.heading {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    justify-items: center;
+    /* padding: 30px; */
+    padding-top: 20px;
+}
+
+.image {
+    height: 50px;
+    margin-left: 40px;
+}
+
+.text1 {
+    line-height: 20px;
+    border: 3px solid black;
+    height: 20px;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+.header1 a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav {
+    background-color: blue;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    line-height: 60px;
+    
+
+}
+
+.navbar li {
+    list-style: none;
+} 
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 20px;
+
+}
+
+.checkbtn {
+    display: none;
+}
+#check {
+    display: none;
+}
+.pencil {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./image/pincle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text-two {
+    background-color: aqua;
+    height: 150px;
+    width: 30%;
+    /* text-align: center; */
+    padding-top: 40px;
+    border-radius: 20px;
+    margin-left: 35%;
+}
+.logo {
+    text-align: center;
+    padding-top: 40px;
+}
+.user1 {
+    width: 70%;
+    height: 20px;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 50px;
+} 
+.botton{
+    width: 20%;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 50px; 
+}
+.botton2 {
+    width: 20%;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 10px; 
+}
+
+
+@media (max-width:800px) {
+   
+   .navbar li a {
+    margin-left: 8px;
+    font-size: 30px;
+   }
+   .heading {
+    display: block;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+   }
+   .checkbtn {
+    display: block;
+    font-size: 40px;
+    padding-top: 10px;
+}
+.navbar{
+    display: block;
+    background-color:black;
+    margin-top: 13px;
+}
+.navbar{
+    left: -100%;
+    width: 100%;
+    transition: 1s;
+    position: fixed;
+}
+
+ #check:checked~.navbar{
+    left: 0%;
+}
+.text-two {
+    background-color: aqua;
+    height: 150px;
+    width: 90%;
+    margin-left: 15px;
+}
+}
